@@ -5,6 +5,7 @@ import MongoStore from "connect-mongo";
 import dotenv from "dotenv";
 import passport from "passport";
 import DB_CONFIG from "./dataBase/config/configDB";
+import routesProductos from "./routers/productos/productos";
 import "./dataBase/database"; 
 dotenv.config();
 
@@ -29,6 +30,7 @@ app.use(session({
 app.use(passport.session()); 
 app.use(passport.initialize());
 
+app.use("/productos",routesProductos); 
 
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 3000;

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import DB_CONFIG from "./config/configDB";
 
 
-mongoose.connect(DB_CONFIG.mongoDB.URLmongoUsers, DB_CONFIG.mongoDB.options)
+mongoose.connect(DB_CONFIG.mongoDB.URLmongoEcommerce, DB_CONFIG.mongoDB.options)
     .then(() => {
         console.log("Connected to MongoDB");
     })

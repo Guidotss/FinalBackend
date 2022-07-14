@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export class Carrito{
+export class Producto{
     constructor(collection,schema){
         this.collection = mongoose.model(collection,schema);
     }
