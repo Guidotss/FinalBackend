@@ -4,8 +4,11 @@ import session from "express-session";
 import MongoStore from "connect-mongo";
 import dotenv from "dotenv";
 import passport from "passport";
+import path from "path"; 
 import DB_CONFIG from "./dataBase/config/configDB";
 import routesProductos from "./routers/productos/productos";
+import routesCarrito from "./routers/cart/carrito";
+import routesHome from "./routers/home/home";
 import "./dataBase/database"; 
 dotenv.config();
 
@@ -16,7 +19,7 @@ const app = express();
 app.use(express.json()); 
 app.use(express.urlencoded({extended:true})); 
 app.use(morgan("dev"));
-app.use(express.static("../../frontend/public")); 
+app.use(express.static(path.resolve("frontend/public"))); 
 app.use(session({
     secret: `${process.env.SESSION_SECRET}`,
     resave: false,
@@ -30,7 +33,9 @@ app.use(session({
 app.use(passport.session()); 
 app.use(passport.initialize());
 
+app.use("/",routesHome);
 app.use("/productos",routesProductos); 
+app.use("/carrito",routesCarrito);
 
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 3000;

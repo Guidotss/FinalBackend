@@ -1,12 +1,17 @@
 import { Router } from "express";
-import { ProductDao as api } from "../../daos/productDao"; 
+import { ProductDao } from "../../daos/productDao"; 
+
+const api = new ProductDao();
+
+
 
 const router = Router();
 
 
 
 router.get("/", async(req,res) => {
-    res.send("hola"); 
+    const productos = api.getAll();
+    res.json(productos);
 }); 
 
 
