@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 9%;
+}
+
+.card{
+    width: 700px;
+    height: 400px;
+    background-color: beige;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+}
+.card-body{
+    align-items: center;
+}
+.input{
+    width: 400px;
+    margin-bottom: 10px;
+    background-color: white;
+    align-self: center;
+}

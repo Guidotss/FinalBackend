@@ -9,6 +9,8 @@ import DB_CONFIG from "./dataBase/config/configDB";
 import routesProductos from "./routers/productos/productos";
 import routesCarrito from "./routers/cart/carrito";
 import routesHome from "./routers/home/home";
+import routesLogin from "./routers/login/login";
+import routesLogout from "./routers/logout/logout";
 import "./dataBase/database"; 
 dotenv.config();
 
@@ -36,6 +38,8 @@ app.use(passport.initialize());
 app.use("/",routesHome);
 app.use("/productos",routesProductos); 
 app.use("/carrito",routesCarrito);
+app.use("/login",routesLogin);
+app.use("/logout",routesLogout);
 
 // eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 3000;
