@@ -40,14 +40,13 @@ body{
     position: relative;
     margin: top 10px;
     text-align: center; 
-    margin-bottom: 25px;
 }
 .separador::before,.separador::after{
     content: "";
     position: absolute; 
     width: 120px;
     height: 1px;
-    background-color: #fff;
+    background-color: black;
     margin-top: 0.7em;
 }
 .separador::before{
@@ -55,9 +54,6 @@ body{
 }
 .separador::after{
     right:-130px
-}
-ul{
-    margin-top: -20px;
 }
 .facebook{
     border-radius: 15px;
@@ -67,7 +63,6 @@ ul{
 .btn-logos{
     border-radius: 15px;
 }
-
 .btn-logos:hover{
     box-shadow: 0px 0px 0px 2px #c77dff;
     transition: 0.5s;
