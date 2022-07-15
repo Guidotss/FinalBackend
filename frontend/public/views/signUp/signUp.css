@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 8%;
+}
+
+.card{
+    width: 800px;
+    height: 400px;
+    background-color:#f4a261;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 3px #000;
+    text-align: center;
+}
+.card-body{
+    align-items: center;
+}
+.card-title{
+    margin-bottom: 3%;
+    color: #fff;
+}
+.input{
+    width: 400px;
+    background-color: white !important;
+    align-self: center;
+    margin-bottom: 3%;
+}
+.btn{
+    width: 400px;
+    background-color: #f4a261;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 3%;
+    margin-top: 20px;
+}

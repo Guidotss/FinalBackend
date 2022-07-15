@@ -23,7 +23,7 @@ body{
 }
 .input{
     width: 400px;
-    background-color: white;
+    background-color: white !important;
     align-self: center;
     margin-bottom: 3%;
 }
@@ -60,14 +60,9 @@ body{
     margin-bottom: 3%;
     padding: 9px;
 }
-.btn-logos{
-    border-radius: 15px;
+.gitHub{
+    margin-top: -12px;
 }
-.btn-logos:hover{
-    box-shadow: 0px 0px 0px 2px #c77dff;
-    transition: 0.5s;
-}
-
 img{
     width: 150px;
     padding: 10px;
@@ -77,5 +72,5 @@ p{
     color:black; 
 }
 a{
-    color:blue; 
+    color:blue !important;; 
 }

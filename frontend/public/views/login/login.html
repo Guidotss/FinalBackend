@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/views/login/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title">Log In</h2>
-                <form action="" method="">
+                <form action="/login" method="post">
                     <input type="text" class="input" name="nombre" placeholder="nombre...">
                     <input type="email" class="input" name="email" placeholder="email...">
                     <input type="password" class="input" name="password" placeholder="pasword...">
@@ -26,29 +26,26 @@
                 <div class="logos">
                     <ul>
                         <li>
-                            <a href="">
-                                <button class="btn-logos facebook">
-                                    <img src="../../images/facebookBlanco.png" alt="">
+                            <a href="login/auth/facebook">
+                                <button class="btn">
+                                    <img src="../../images/facebookBlanco.png" alt="facebook.png">
                                 </button>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <button class="btn-logos github">
-                                    <img src="../../images/GitHub.png" alt="">
+                                <button class="btn">
+                                    <img src="../../images/GitHub.png" alt="gitHub.png" class="gitHub">
                                 </button>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <p>
-                    Todavia no tenes cuenta? <a href="">click aqui</a> para crear una 
+                    Todavia no tenes cuenta? <a href="/signUp">click aqui</a> para crear una 
                 </p>
             </div>
         </div>
     </section>
-
-
-    <script src="/views/login/login.js"></script>
 </body>
 </html>

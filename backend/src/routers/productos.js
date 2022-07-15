@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { ProductDao } from "../../daos/productDao"; 
+import { ProductDao } from "../daos/productDao";
 
 const api = new ProductDao();
 

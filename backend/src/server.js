@@ -6,12 +6,15 @@ import dotenv from "dotenv";
 import passport from "passport";
 import path from "path"; 
 import DB_CONFIG from "./dataBase/config/configDB";
-import routesProductos from "./routers/productos/productos";
-import routesCarrito from "./routers/cart/carrito";
-import routesHome from "./routers/home/home";
-import routesLogin from "./routers/login/login";
-import routesLogout from "./routers/logout/logout";
+import routesProductos from "./routers/productos";
+import routesCarrito from "./routers/carrito";
+import routesHome from "./routers/home";
+import routesLogin from "./routers/login";
+import routesLogout from "./routers/logout";
+import routesSignUp from "./routers/signUp";
 import "./dataBase/database"; 
+import "./passport/local";
+import "./passport/facebook";
 dotenv.config();
 
 const app = express(); 
@@ -23,21 +26,22 @@ app.use(express.urlencoded({extended:true}));
 app.use(morgan("dev"));
 app.use(express.static(path.resolve("frontend/public"))); 
 app.use(session({
-    secret: `${process.env.SESSION_SECRET}`,
-    resave: false,
-    saveUninitialized: false,
     store:MongoStore.create({
         mongoUrl:DB_CONFIG.mongoDB.URLmongoStore,
         mongoOptions:DB_CONFIG.mongoDB.options,
         ttl:600
-    })
+    }), 
+    secret: `${process.env.SESSION_SECRET}`,
+    resave: false,
+    saveUninitialized: false,
 })); 
 app.use(passport.session()); 
 app.use(passport.initialize());
 
-app.use("/",routesHome);
+app.use("/home",routesHome);
 app.use("/productos",routesProductos); 
 app.use("/carrito",routesCarrito);
+app.use("/signUp",routesSignUp);
 app.use("/login",routesLogin);
 app.use("/logout",routesLogout);
 

@@ -2,10 +2,12 @@ import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 
 const userSchema = new mongoose.Schema({
-    nombre: {type:String,required:true},
-    email: {type:String,required:true},
-    password: {type:String,required:true},
-    image: {type:String,required:true}
+    nombre: {type:String},
+    email: {type:String},
+    password: {type:String},
+    image: {type:String},
+    facebookId: {type:String},
+    githubId: {type:String},
 }); 
 
 userSchema.methods.encryptPassword = (password) => {
