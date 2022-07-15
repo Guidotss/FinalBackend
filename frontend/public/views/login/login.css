@@ -3,23 +3,84 @@ body{
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    padding: 9%;
+    padding: 8%;
 }
 
 .card{
     width: 700px;
-    height: 400px;
-    background-color: beige;
+    height: 600px;
+    background-color:#f4a261;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px #000;
+    box-shadow: 1px 1px 1px 3px #000;
     text-align: center;
 }
 .card-body{
     align-items: center;
 }
+.card-title{
+    margin-bottom: 3%;
+    color: #fff;
+}
 .input{
     width: 400px;
-    margin-bottom: 10px;
     background-color: white;
     align-self: center;
+    margin-bottom: 3%;
+}
+.btn{
+    width: 400px;
+    background-color: #f4a261;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 3%;
+}
+.separador{
+    color:black; 
+    display: inline-block; 
+    position: relative;
+    margin: top 10px;
+    text-align: center; 
+    margin-bottom: 25px;
+}
+.separador::before,.separador::after{
+    content: "";
+    position: absolute; 
+    width: 120px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 0.7em;
+}
+.separador::before{
+    left:-130px
+}
+.separador::after{
+    right:-130px
+}
+ul{
+    margin-top: -20px;
+}
+.facebook{
+    border-radius: 15px;
+    margin-bottom: 3%;
+    padding: 9px;
+}
+.btn-logos{
+    border-radius: 15px;
+}
+
+.btn-logos:hover{
+    box-shadow: 0px 0px 0px 2px #c77dff;
+    transition: 0.5s;
+}
+
+img{
+    width: 150px;
+    padding: 10px;
+}
+p{
+    margin-top:-5px; 
+    color:black; 
+}
+a{
+    color:blue; 
 }

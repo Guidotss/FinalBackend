@@ -13,17 +13,42 @@
     <section>
         <div class="card">
             <div class="card-body">
-                <h2 class="card-title">hola</h2>
+                <h2 class="card-title">Log In</h2>
                 <form action="" method="">
-                    <input type="text" class="input">
-                    <input type="text" class="input">
-                    <input type="text" class="input">
+                    <input type="text" class="input" name="nombre" placeholder="nombre...">
+                    <input type="email" class="input" name="email" placeholder="email...">
+                    <input type="password" class="input" name="password" placeholder="pasword...">
+                    <button class="btn btn-primary">Log In</button>
                 </form>
+                <div class="separador">
+                    <span>Or</span>
+                </div>
+                <div class="logos">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <button class="btn-logos facebook">
+                                    <img src="../../images/facebookBlanco.png" alt="">
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <button class="btn-logos github">
+                                    <img src="../../images/GitHub.png" alt="">
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    Todavia no tenes cuenta? <a href="">click aqui</a> para crear una 
+                </p>
             </div>
         </div>
     </section>
 
 
-    <script src="/views/login/saludo.js"></script>
+    <script src="/views/login/login.js"></script>
 </body>
 </html>
