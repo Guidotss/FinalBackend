@@ -9,7 +9,7 @@ import jwt from "jsonwebtoken";
 const router = Router();
 const api = new MensajesDao();
 
-router.get("/",auth,(req,res) => {
+router.get("/",(req,res) => {
     res.sendFile(path.resolve("frontend/public/views/home","home.html"));
 }); 
 

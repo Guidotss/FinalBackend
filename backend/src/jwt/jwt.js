@@ -13,10 +13,12 @@ export function auth(req,res,next){
 
     const authHeader = req.header["authorization"] || req.header["Authorization"];
 
-    const token = authHeader.split(" ")[1];
+    if(!authHeader) return res.status(401).json({message: "No autorizado"});
+    
     if(!token){
         return res.redirect("http://localhost:8080/login");
     }
+    const token = authHeader.split(" ")[1];
 
     try {
         req.user = jwt.verify(token,PRIVATE_KEY);

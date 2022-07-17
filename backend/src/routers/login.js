@@ -16,6 +16,7 @@ router.post("/",async(req,res) => {
         if(!user) return res.status(400).json({message: "Usuario o contraseña incorrectos"});
 
         const token = crearToken(user);
+        
         res.redirect("http://localhost:8080/home"); 
     })(req,res); 
 }); 
