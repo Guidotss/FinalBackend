@@ -1,2 +1,76 @@
+section header {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
 
+section header nav ul {
+  list-style: none;
+}
+
+section header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+section header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+section header .perfil {
+  margin-right: 80px;
+}
+
+section header #btn-imagen {
+  border-radius: 50px;
+}
+
+section header #btn-imagen:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section header li img {
+  margin-top: -120px;
+  margin-left: 70px;
+  width: 15px;
+  height: 15px;
+}
+
+section header img {
+  width: 50px;
+  height: 50px;
+}
+
+section header .drop-down {
+  display: none;
+  position: absolute;
+  background-color: #fca311;
+  padding: 20px;
+  margin-left: -30px;
+  border-radius: 20px;
+  height: 17%;
+}
+
+section header .drop-down .drop-down-bg li {
+  color: black;
+  margin-bottom: 5px;
+}
+
+section header .drop-down li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { MensajesDao } from "../daos/mensajesDao";
-import { auth } from "../jwt/jwt";
 import path from "path"; 
-import jwt from "jsonwebtoken";
+import { MensajesDao } from "../daos/mensajesDao";
+import { auth } from "../middlewares/auth";
+
 
 
 

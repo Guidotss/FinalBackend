@@ -9,6 +9,48 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="">
-    </div>
+    <section>
+        <header>            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Productos</a>
+                    </li>
+                    <li>
+                        <a href="">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="perfil">
+                <button id="btn-imagen" onclick="mostrarDropDown">   
+                    <div id="imagen">
+                    </div>
+                </button>
+                <div class="drop-down" id="drop-down">
+                    <div id="dropDown" class="drop-down-bg">
+                        <ul>
+                            <li>
+                                <a href="">Perfil</a>
+                            </li>
+                            <li>
+                                <a href="">Tus compras</a>
+                            </li>
+                            <li>
+                                <a href="">Logout</a>
+                            </li>
+                            <li>
+                                <button id="cerrarDrop" onclick="cerrarDropDown">
+                                    <img src="../images/tecla-de-flecha-hacia-arriba.png" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </header>
+    </section>
+
+    <script src="/views/main.js"></script>
 </html>
