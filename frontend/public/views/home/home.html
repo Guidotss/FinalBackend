@@ -7,6 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hjola</h1>
+    <div class="perfil">
+        <button id="btn-imagen" onclick="mostrarDropDown">   
+            <div id="imagen">
+            </div>
+        </button>
+        <div class="drop-down" id="drop-down">
+            <div id="dropDown" class="drop-down-bg">
+                <ul>
+                    <li class="dropDown-item">
+                        <a href="">Perfil</a>
+                    </li>
+                    <li  class="dropDown-item">
+                        <a href="">Tus compras</a>
+                    </li>
+                    <li  class="dropDown-item">
+                        <a href="/login">Login</a>
+                    </li>
+                    <li>
+                        <button id="cerrarDrop" onclick="cerrarDropDown">
+                            <img src="../images/tecla-de-flecha-hacia-arriba.png" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+    </div>
 </body>
 </html>

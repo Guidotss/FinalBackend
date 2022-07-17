@@ -1,0 +1,59 @@
+html{
+    scroll-behavior: smooth;
+}
+section{
+    header{
+        margin:10px; 
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        nav{
+            ul{
+                list-style: none;
+                margin-left: 10px;
+                li{
+                    display: inline-block;
+                    margin-right: 20px;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                    margin-right: 40px;
+                }
+                li:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+        }
+        .login{
+            width: 130px;
+        }
+    }   
+}
+hr{
+    
+    color: black;
+    height: 1px;
+}
+
+.centerContent{
+    background-image: url("../images/ecommerce-background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 420px;
+    margin-top: 5px;
+}
+.info{
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 400px;
+    .card{
+        background-color: #fff;
+        margin-top: 5%;
+    }
+}

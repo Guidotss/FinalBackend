@@ -12,6 +12,7 @@ import routesHome from "./routers/home";
 import routesLogin from "./routers/login";
 import routesLogout from "./routers/logout";
 import routesSignUp from "./routers/signUp";
+import routesEntrada from "./routers/entrada";
 import "./dataBase/database"; 
 import "./passport/local";
 import "./passport/facebook";
@@ -38,6 +39,7 @@ app.use(session({
 app.use(passport.session()); 
 app.use(passport.initialize());
 
+app.use("/",routesEntrada); 
 app.use("/home",routesHome);
 app.use("/productos",routesProductos); 
 app.use("/carrito",routesCarrito);

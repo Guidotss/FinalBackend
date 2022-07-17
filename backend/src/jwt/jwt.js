@@ -10,13 +10,14 @@ export function crearToken(usuario){
 }
 
 export function auth(req,res,next){
-
     const authHeader = req.header["authorization"] || req.header["Authorization"];
 
-    if(!authHeader) return res.status(401).json({message: "No autorizado"});
-    
+    if(!authHeader){
+        return res.redirect("/login"); 
+    }
+
     if(!token){
-        return res.redirect("http://localhost:8080/login");
+        return res.redirect("/login"); 
     }
     const token = authHeader.split(" ")[1];
 

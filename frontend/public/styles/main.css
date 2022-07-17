@@ -1,2 +1,77 @@
+html {
+  scroll-behavior: smooth;
+}
 
+section header {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+section header nav ul {
+  list-style: none;
+  margin-left: 10px;
+}
+
+section header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-right: 40px;
+}
+
+section header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+section header nav ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section header .login {
+  width: 130px;
+}
+
+hr {
+  color: black;
+  height: 1px;
+}
+
+.centerContent {
+  background-image: url("../images/ecommerce-background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 420px;
+  margin-top: 5px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 400px;
+}
+
+.info .card {
+  background-color: #fff;
+  margin-top: 5%;
+}
 /*# sourceMappingURL=main.css.map */
