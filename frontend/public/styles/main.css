@@ -48,7 +48,7 @@ hr {
   background-image: url("../images/ecommerce-background-image.jpg");
   background-size: cover;
   background-position: center;
-  padding: 400px;
+  padding: 24%;
   margin-top: 5px;
 }
 
@@ -60,7 +60,7 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #e9ecef;
-  padding: 200px;
+  padding: 17%;
 }
 
 .info .card {
@@ -165,5 +165,38 @@ hr {
   width: 72.8vw;
   height: 70vh;
   border-radius: 10px;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer .container hr {
+  margin-left: 35%;
+  width: 30%;
+  height: 1px;
+  color: aliceblue;
+}
+
+footer .container h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+footer .container img {
+  width: 35px;
+  height: 35px;
+}
+
+footer .container ul {
+  list-style: none;
+}
+
+footer .container ul li {
+  display: inline-block;
+  margin: 20px;
 }
 /*# sourceMappingURL=main.css.map */
