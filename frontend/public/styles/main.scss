@@ -41,14 +41,22 @@ hr{
     background-image: url("../images/ecommerce-background-image.jpg");
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
     padding: 23%;
+=======
+    padding: 24%;
+>>>>>>> 27c731b43f0ac23e410471fcc80bfc65e7e03e77
     margin-top: 5px;
 }
 .info{
     display: flex;
     justify-content: center;
     background-color: #e9ecef;
+<<<<<<< HEAD
     padding: 18%;
+=======
+    padding: 17%;
+>>>>>>> 27c731b43f0ac23e410471fcc80bfc65e7e03e77
     .card{
         background-color: black;
         align-items: center;
@@ -115,6 +123,35 @@ hr{
                 width: 72.8vw;
                 height: 70vh;
                 border-radius: 10px; 
+            }
+        }
+    }
+}
+footer{
+    .container{
+        hr{
+            margin-left: 35%;
+            width: 30%;
+            height: 1px;
+            color: aliceblue;
+        }
+        text-align: center;
+        h1{
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+        img{
+            width: 35px;
+            height: 35px;
+        }
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                margin: 20px;
             }
         }
     }
