@@ -48,7 +48,7 @@ hr {
   background-image: url("../images/ecommerce-background-image.jpg");
   background-size: cover;
   background-position: center;
-  padding: 400px;
+  padding: 23%;
   margin-top: 5px;
 }
 
@@ -60,7 +60,7 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #e9ecef;
-  padding: 200px;
+  padding: 18%;
 }
 
 .info .card {
