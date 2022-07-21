@@ -10,7 +10,7 @@ const FacebookStrategy = Strategy;
 passport.use(new FacebookStrategy({
     clientID: `${process.env.FACEBOOK_CLIENT_ID}`,
     clientSecret: `${process.env.FACEBOOK_CLIENT_SECRET}`,
-    callbackURL: 'http://localhost:8080/login/auth/facebook/callback',
+    callbackURL: `${process.env.FACEBOOK_CALLBACK_URL}`,
 },async(accessToken, refreshToken, profile, done) => {
     const user = await User.findOne({facebookId: profile.id});
     if(user){

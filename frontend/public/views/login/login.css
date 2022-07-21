@@ -63,6 +63,10 @@ body{
 .gitHub{
     margin-top: -12px;
 }
+.twitter{
+    margin-top: -13px;
+    width: 200px;
+}
 img{
     width: 150px;
     padding: 10px;

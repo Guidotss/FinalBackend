@@ -16,6 +16,9 @@ import routesEntrada from "./routers/entrada";
 import "./dataBase/database"; 
 import "./passport/local";
 import "./passport/facebook";
+import  "./passport/github";
+import "./passport/twitter";
+
 dotenv.config();
 
 const app = express(); 

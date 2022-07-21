@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema({
     image: {type:String},
     facebookId: {type:String},
     githubId: {type:String},
+    twitterId: {type:String},
 }); 
 
 userSchema.methods.encryptPassword = (password) => {
