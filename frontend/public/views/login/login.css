@@ -3,7 +3,8 @@ body{
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    padding: 8%;
+    padding: 4%;
+    overflow-y: hidden;
 }
 
 .card{
